@@ -1,0 +1,47 @@
+<html>
+	<style>
+		table, th, td {
+		  border:1px solid black;
+		}
+		</style>
+	
+  
+  
+	<body>
+
+		<h1>Bulk MAP Contract  Upload System | ABC Company</h1>
+
+	<h2>Example Excel file format</h2>
+		
+<table style="width:100%">
+	<tr>
+	  <th>Nr</th>
+	  <th>Role</th>
+	  <th>SkillLevel</th>
+	  <th>MapUser</th>
+	  <th>Cluster</th>
+	  <th>Ptice</th>
+	</tr>
+	<tr>
+	  <td>01</td>
+	  <td>RoleName will be here</td>
+	  <td>Skill level will here</td>
+	  <td>Map user Name will here</td>
+	  <td>Cluster will here</td>
+	  <td>Price Wil be here</td>
+	</tr>
+	
+  </table>
+
+  <p>*N.B: Bulk File should be in .xlsx format and one book sheeted</p>
+		<form ref='uploadForm' 
+			id='uploadForm' 
+			action='/upload' 
+			method='post' 
+			encType="multipart/form-data">
+				<input type="file" name="sampleFile" />
+				<input type='submit' value='Upload!' />
+		</form>		
+	</body>
+	<a href="javascript:history.back()">Go Back</a>
+</html>
